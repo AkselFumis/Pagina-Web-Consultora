@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+
+}
+
+.sobreMi {
+    display: flex;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.sobreMi .derecha {
+    display: flex;
+    width: 40%;
+    height: 90%;
+    margin-left: 5%;
+    background-color: #ddd;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    overflow: hidden;
+    border: 15px ridge #ad88bf;
+    filter: drop-shadow(9px 9px 10px #000000);
+    -webkit-filter: drop-shadow(9px 9px 10px #000000);
+    -moz-filter: drop-shadow(9px 9px 10px #000000);
+}
+
+.sobreMi .derecha img {
+    height: 100%;
+    width: 100%;
+}
+
+.sobreMi .izquierda {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-wrap: wrap;
+
+
+}
+
+.izquierda h3 {
+    display: flex;
+    font-size: 2rem;
+    width: 40%;
+    height: 4rem;
+    text-decoration: underline;
+    color: #fff;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 69px;
+    background: linear-gradient(145deg, #59bfcc, #6ae3f3);
+    box-shadow: 8px 8px 8px #28555b;
+    transition: transform 0.7s ease-in-out;
+    margin-bottom: 5.5%;
+}
+
+.izquierda h3:hover {
+    transform: scale(1.1);
+    background: linear-gradient(145deg, #e4afb4, #ffd0d6);
+    box-shadow: 8px 8px 7px #654e50,
+        -8px -8px 7px #ffffff;
+}
+
+.izquierda p {
+    height: auto;
+    text-align:justify;
+    margin-top: 0.75%;
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px){
+    .sobreMi{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .sobreMi .derecha{
+        margin: auto;
+        width: 80%;
+        margin-bottom: 5vh;
+    }
+    .sobreMi .izquierda{
+        width: 90%;
+    }
+    .sobreMi .izquierda h3{
+        width: 80%;
+    }
+}

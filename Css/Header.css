@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+hr {
+    border: none;
+    /* Elimina el borde predeterminado */
+    height: 2px;
+    /* Establece la altura de la línea */
+    background-color: #FDC2C8;
+    /* Color de fondo de la línea */
+    margin: 20px 0;
+    /* Margen superior e inferior para separar de otros elementos */
+}
+
+.content {
+    margin-top: 0px;
+    /* Ajusta el margen superior para evitar que el contenido quede detrás de la barra de navegación fija */
+}
+
+.sticky {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: fadeInDown 0.5s;
+    margin: 0%;
+
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #ddd;
+    width: 80%;
+    /* Barra de navegación ocupa el 80% del ancho de la pantalla */
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 25%;
+    font-size: 1.1vw;
+    /* Efecto de transición de color al pasar el ratón */
+}
+
+nav a:hover {
+    background-color: #FEEBED;
+    color: #FDC2C8;
+
+}
+
+nav .flex-box {
+    display: flex;
+    justify-content: start;
+    width: 60%;
+    height: 100%;
+    margin-right: 1%;
+}
+
+/* Estilos del logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    max-height: auto;
+    padding: 10px;
+}
+
+.logo img {
+    width: auto;
+    height: 100%;
+    max-height: 60px;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Estilos del menú desplegable */
+.dropdown {
+    width: 25%;
+    float: left;
+    z-index: 3;
+    transition: background-color 0.3s;
+}
+
+.dropdown:hover {
+    background-color: #FEEBED;
+    color: #FDC2C8;
+}
+
+.dropdown .dropbtn {
+    font-size: 1.1vw;
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 10%;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 4;
+}
+
+.dropdown-content a {
+    float: none;
+    width: auto;
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 4;
+}
+
+.dropdown-content a:hover {
+    background-color: #FEEBED;
+    color: #FDC2C8;
+    min-width: 20px;
+    z-index: 4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 4;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 10%;
+    width: 5%;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #00d757;
+    position: fixed;
+    /* Fija el botón en una posición */
+    bottom: 20px;
+    /* Espacio desde la parte inferior */
+    right: 30px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.sign {
+    width: 100%;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign svg {
+    width: 50%;
+    height: auto;
+}
+
+.sign svg path {
+    fill: white;
+}
+
+.text {
+    position: absolute;
+    right: -5%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: 0.3s;
+}
+
+.Btn:hover {
+    width: 15%;
+    border-radius: 40px;
+    transition-duration: 0.3s;
+}
+
+.Btn:hover .sign {
+    width: 30%;
+    transition-duration: 0.3s;
+    padding-left: 10px;
+}
+
+.Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: 0.3s;
+    padding-right: 10px;
+}
+
+.Btn:active {
+    transform: translate(2px, 2px);
+}
+
+@media ( max-width: 768px)  {
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav .flex-box {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Muestra el menú cuando el botón de hamburguesa está activo */
+    nav .flex-box.active {
+        display: flex;
+        height: 25vh;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav .logo {
+        width: 90%;
+    }
+
+    .logo.active img {
+        max-height: 150px;
+        /* Ajusta este valor según el tamaño deseado */
+    }
+
+    nav a {
+        width: 100%;
+        font-size: 3vw;
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .dropdown .dropbtn {
+        font-size: 3vw;
+        padding: 0%;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        /* Posiciona el menú desplegable sobre el resto */
+        left: 0;
+        top: 100%;
+        /* Coloca el menú justo debajo del botón */
+        width: 100%;
+        background-color: #fff;
+        z-index: 10;
+        /* Asegura que esté sobre otros elementos */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a {
+        font-size: 3vw;
+        padding: 12px 16px;
+        text-align: left;
+    }
+
+    /* Dropdown activo cuando se hace clic en el botón en pantallas pequeñas */
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+
+    /* Icono caret para abrir y cerrar */
+    .dropdown .dropbtn i {
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown.active .dropbtn i {
+        transform: rotate(180deg);
+    }
+
+    .Btn {
+        width: 15%;
+        /* Ajusta el ancho del botón para pantallas pequeñas */
+        height: 7.5%;
+        /* Asegura que la altura se ajuste al contenido */
+        bottom: 15px;
+        /* Ajusta la posición para pantallas pequeñas */
+        right: 15px;
+        /* Mueve el botón un poco más hacia la esquina */
+    }
+
+    .sign svg {
+        width: 60%;
+        /* Aumenta el tamaño del icono para mayor visibilidad */
+    }
+
+    .text {
+        font-size: 1em;
+        /* Ajusta el tamaño del texto */
+    }
+
+    .Btn:hover {
+        width: 40%;
+        /* Cambia el tamaño cuando se hace hover para pantallas pequeñas */
+        border-radius: 30px;
+    }
+
+    .Btn:hover .sign {
+        width: 35%;
+        /* Ajusta el espacio del icono en hover */
+        padding-left: 5px;
+    }
+
+    .Btn:hover .text {
+        width: 65%;
+        /* Ajusta el tamaño del texto en hover */
+        font-size: 0.9em;
+        /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+}
+
+@media (max-width:480px) {
+    .logo.active img {
+        max-height: 100px;
+        /* Ajusta este valor según el tamaño deseado */
+    }
+
+    nav .flex-box.active {
+        height: 20vh;
+    }
+
+    nav a {
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 4vw;
+        padding: 0%;
+        text-align: center;
+    }
+    .dropdown .dropdown-content a{
+        font-size: 4vw;
+        text-align: center;
+    }
+    
+}

@@ -1,0 +1,353 @@
+h2{
+    display: flex;
+    font-size: 2rem;
+    width: 40%;
+    height: 4rem;
+    text-decoration: underline;
+    color: #fff;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 69px;
+    background: linear-gradient(145deg, #59bfcc, #6ae3f3);
+    box-shadow: 8px 8px 8px #28555b;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    transition: transform 0.2s ease-in-out
+}
+
+h2:hover{
+    transform: scale(1.1);
+    background: linear-gradient(145deg, #e4afb4, #ffd0d6);
+    box-shadow: 8px 8px 7px #654e50,
+        -8px -8px 7px #ffffff;
+}
+
+.contactos {
+    display: flex;
+    width: 100%;
+    height: 30em;
+    max-width: 100%;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    color: #FDC2C8;
+}
+
+.contactos .empresa {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: #FDC2C8;
+    color: white;
+    transition: background-color 0.5s ease;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-right: 2.5px dashed black;
+    ;
+}
+
+.contactos .empresa:hover {
+    background-color: #30C6DB;
+    color: #333;
+}
+
+.contactos .persona {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: #FDC2C8;
+    color: white;
+    transition: background-color 0.5s ease;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.contactos .persona:hover {
+    background-color: #30C6DB;
+    color: #333;
+}
+
+.contactos h3 {
+    display: flex;
+    max-height: 10%;
+    font-size: 1.5em;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 68px 68px 68px 68px;
+    -webkit-border-radius: 68px 68px 68px 68px;
+    -moz-border-radius: 68px 68px 68px 68px;
+    box-shadow: 1px 2px 6px 4px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 1px 2px 6px 4px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 1px 2px 6px 4px rgba(0, 0, 0, 0.71);
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.58);
+}
+
+.persona h4 {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.01s ease;
+    /* Transición suave de 0.3 segundos */
+}
+
+.persona:hover h4 {
+    opacity: 1;
+    transition: opacity 2s ease;
+    position: relative;
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 3vh;
+    width: 20%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDC2C8;
+    border-radius: 142px 142px 142px 0px;
+    -webkit-border-radius: 142px 142px 142px 0px;
+    -moz-border-radius: 142px 142px 142px 0px;
+    border: 2px dotted #000000;
+    box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contactos a {
+    color: white;
+}
+
+.contactos .Logo {
+    display: flex;
+    justify-content: center;
+    max-height: 50%;
+    max-width: auto;
+    width: 50%;
+    height: 30%;
+}
+
+.contactos .feather-mail {
+    transition: transform 0.7s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.contactos .feather-mail:hover {
+    transform: scale(1.5);
+    /* Puedes ajustar el valor según el grado de agrandamiento deseado */
+    stroke: black;
+    /* Cambia el color del trazo al pasar el cursor */
+}
+
+.contactos p {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+
+    font-size: 1.4em;
+    align-content: center;
+    align-items: center;
+    margin: 0.15%;
+}
+
+p span {
+    border-bottom: 1px dotted white;
+    /* Línea punteada de color negro */
+
+}
+
+#emailModal {
+    display: none;
+}
+
+#cvModal {
+    display: none;
+}
+
+/* Ajustes del modal */
+.modal {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    /* Fijo en la pantalla */
+    z-index: 1;
+    /* En la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Habilitar scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #171717;
+    /* Mantener el color oscuro */
+    border-radius: 20px;
+    /* Redondeo similar al del formulario */
+    box-shadow: 0px 0px 30px rgba(100, 255, 218, 0.3);
+    /* Sombra suave */
+    max-width: 500px;
+    /* Limitar el ancho del modal */
+    width: 100%;
+    /* Ajustar al 100% del contenedor */
+    transition: transform 0.3s ease-in-out;
+    /* Animación suave al abrir */
+}
+
+.modal-content:hover {
+    transform: scale(1.02);
+    /* Efecto hover leve */
+}
+
+
+/* Añadir animaciones al abrir */
+.modal-content {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.modal.open .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+}
+
+.form-heading {
+    text-align: center;
+    margin: 2em;
+    color: #30C6DB;
+    font-size: 1.2em;
+    background-color: transparent;
+    align-self: center;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: rgb(30, 30, 30);
+    background-color: #e7e7e7;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 1em;
+}
+
+.sendMessage-btn {
+    cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #30C6DB;
+    font-weight: bold;
+    outline: 1px solid #30C6DB;
+    transition: all ease-in-out 0.3s;
+}
+
+.sendMessage-btn:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: #30C6DB;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.form-card1 {
+    background-image: linear-gradient(163deg, #30C6DB 0%, #30C6DB 100%);
+    border-radius: 22px;
+    transition: all 0.3s;
+}
+
+.form-card1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(48, 198, 219, 0.3);
+}
+
+.form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+}
+
+.form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+@media (max-width:768px){
+
+    h2{
+        width: 90%;
+        margin-bottom: 2vh;
+    }
+
+    .contactos{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .contactos .empresa{
+        width: 100%;
+        border-right: none;
+        border-bottom: 2.5px dashed black;
+    }
+
+    .contactos .persona{
+        width: 100%;
+        border-left: none;
+        border-top: 2.5px dashed black;
+    }
+
+    .persona:hover h4{
+        width: 60%;
+        height: 5vh;
+
+    }
+
+    p span{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:480px) {
+    p span{
+        font-size: 1rem;
+    }
+}

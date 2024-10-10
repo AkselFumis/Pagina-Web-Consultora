@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Coaching.css">
+    <link href="../Css/Header.css" rel="stylesheet" type="text/css" />
+    <link href="../Css/Footer.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar" class="content">
+
+            <div class="logo">
+                <img src="../Imagenes/1.png" alt="Logo de la empresa">
+            </div>
+
+            <button class="hamburger" id="hamburger-btn">
+                &#9776;
+            </button>
+
+            <div class="flex-box" id="menu">
+                <a href="../index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Servicios
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../Html/atracción_del_talento_IT.html">Atracción del talento IT</a>
+                        <a href="../Html/capacitacion.html">Capacitación</a>
+                        <a href="../Html/coaching.html">Coaching individual y Organizacional</a>
+                        <a href="../Html/diagnostico.html">Diagnóstico Organizacional</a>
+                    </div>
+                </div>
+                <a href="../Html/contactos.html">Contacto</a>
+                <a href="../Html/sobre_mi.html">Acerca de mí</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Whatsapp -->
+    <a href="https://wa.me/5493483485904" target="_blank" rel="noopener noreferrer" class="Btn">
+        <div class="sign">
+            <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
+                <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="text">Whatsapp</div>
+    </a>
+
+    <div class="container">
+        <div class="btn-container">
+            <!-- Sol (primera página) -->
+            <svg height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.40 614.40" xml:space="preserve"
+                fill="#000000" stroke="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0">
+                    <rect x="-51.2" y="-51.2" width="614.40" height="614.40" rx="307.2" fill="#ffffff" strokewidth="0">
+                    </rect>
+                </g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path style="fill:#DC85A6;"
+                        d="M256,0c-57.989,0-105.165,47.178-105.165,105.165c0,57.989,47.176,105.165,105.165,105.165 s105.165-47.176,105.165-105.165C361.165,47.178,313.989,0,256,0z">
+                    </path>
+                    <path style="fill:#D6E5F6;"
+                        d="M256,260.609c-106.273,0-192.733,86.462-192.733,192.733c0,13.885,11.256,25.139,25.139,25.139 h335.188c13.883,0,25.139-11.254,25.139-25.139C448.733,347.071,362.273,260.609,256,260.609z">
+                    </path>
+                    <path style="fill:#A4C6EC;"
+                        d="M256,260.609v217.872h167.594c13.883,0,25.139-11.254,25.139-25.139 C448.733,347.071,362.273,260.609,256,260.609z">
+                    </path>
+                    <path style="fill:#CE5C82;"
+                        d="M256,0v210.331c57.989,0,105.165-47.176,105.165-105.165C361.165,47.178,313.989,0,256,0z">
+                    </path>
+                </g>
+            </svg>
+
+            <!-- Switch para cambiar páginas -->
+            <label class="switch btn-color-mode-switch">
+                <input value="1" id="pageSwitch" type="checkbox">
+                <label class="btn-color-mode-switch-inner" data-off="Individual" data-on="Organizacional"
+                    for="pageSwitch"></label>
+            </label>
+
+            <!-- Luna (segunda página) -->
+            <svg height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.40 614.40" xml:space="preserve"
+                fill="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0">
+                    <rect x="-51.2" y="-51.2" width="614.40" height="614.40" rx="307.2" fill="#ffffff" strokewidth="0">
+                    </rect>
+                </g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path style="fill:#CE5C82;"
+                        d="M375.07,74.12c-41.199,0-74.716,33.518-74.716,74.716c0,41.199,33.517,74.717,74.716,74.717 s74.716-33.517,74.716-74.717C449.786,107.637,416.269,74.12,375.07,74.12z">
+                    </path>
+                    <path style="fill:#D6E5F6;"
+                        d="M375.07,259.274c-24.072,0-47.754,6.338-68.484,18.331c-8.539,4.94-11.454,15.865-6.516,24.405 c4.937,8.534,15.853,11.449,24.388,6.524l41.689,72.213c-5.338,3.089-8.939,8.847-8.939,15.456c0,9.864,7.997,17.86,17.86,17.86 h119.07c9.864,0,17.86-7.997,17.86-17.86C512,320.7,450.573,259.274,375.07,259.274z">
+                    </path>
+                    <path style="fill:#CE5C82;"
+                        d="M136.93,74.12c-41.199,0-74.716,33.518-74.716,74.716c0,41.199,33.517,74.717,74.716,74.717 s74.716-33.517,74.716-74.717C211.646,107.637,178.13,74.12,136.93,74.12z">
+                    </path>
+                    <path style="fill:#A4C6EC;"
+                        d="M205.414,277.605c-20.73-11.993-44.412-18.331-68.484-18.331C61.427,259.274,0,320.701,0,396.205 c0,9.864,7.997,17.86,17.86,17.86h119.07c9.864,0,17.86-7.997,17.86-17.86c0-6.611-3.599-12.369-8.939-15.456l41.689-72.213 c8.534,4.927,19.452,2.01,24.388-6.524C216.869,293.47,213.952,282.545,205.414,277.605z">
+                    </path>
+                    <path style="fill:#D6E5F6;"
+                        d="M256,259.274c-75.503,0-136.93,61.427-136.93,136.93c0,9.864,7.997,17.86,17.86,17.86h238.14 c9.864,0,17.86-7.997,17.86-17.86C392.93,320.7,331.503,259.274,256,259.274z">
+                    </path>
+                    <path style="fill:#A4C6EC;"
+                        d="M256,259.274v154.791h119.07c9.864,0,17.86-7.997,17.86-17.86 C392.93,320.7,331.503,259.274,256,259.274z">
+                    </path>
+                    <path style="fill:#DC85A6;"
+                        d="M256,74.12c-41.199,0-74.716,33.518-74.716,74.716c0,41.199,33.517,74.717,74.716,74.717 s74.716-33.517,74.716-74.717C330.716,107.637,297.199,74.12,256,74.12z">
+                    </path>
+                </g>
+            </svg>
+        </div>
+
+
+
+        <div id="page1" class="page">
+            <!-- Contenido de la primera imagen -->
+            <h2>Coaching Individual</h2>
+            <h3>Desarrollar habilidades del colaborador para alcanzar los resultados esperados. Se enfoca en
+                identificar
+                y
+                superar obstáculos, promover el
+                aprendizaje continuo y facilitar la consecución de objetivos personales y para el equipo que
+                impactan en
+                el
+                rendimiento de la organización.</h3>
+
+            <section>
+                <h3> ➤ Individual (1 a 1)</h3>
+                <ul>
+                    <li>Conversaciones de 1 h, orientadas a objetivos entre el coach y los líderes, equipos o
+                        colaboradores,
+                        con el fin de identificar áreas de mejora en su
+                        puesto actual que permitan desarrollar competencias claves para lograr el rendimiento
+                        esperado
+                        tanto
+                        individualmente como del equipo.
+                    </li>
+                </ul>
+
+                <h3> ➤ ¿Para quiénes?</h3>
+                <ul>
+                    <li>Colaboradores en plan de carrera.</li>
+                    <li>Colaboradores de alto potencial.</li>
+                    <li>Colaboradores en transición de puesto/ área/ rol.</li>
+                    <li>Colaboradores que gestionan equipos.</li>
+                    <li>Colaboradores en momento de cambios o crisis.</li>
+                </ul>
+
+                <h3> ➤ Pasos</h3>
+
+                <div class="pasos">
+                    <div class="card">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 505 505" xml:space="preserve">
+                            <circle style="fill:#30C6DB;" cx="252.5" cy="252.5" r="252.5" />
+                            <polygon style="fill:#FFFFFF;"
+                                points="163.6,88 163.6,147.7 103.9,147.7 103.9,403.6 341.8,403.6 341.8,88 " />
+                            <polygon style="fill:#E6E9EE;" points="163.6,88 103.9,147.7 163.6,147.7 " />
+                            <rect x="284.101" y="287.583"
+                                transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 730.0641 324.8634)"
+                                style="fill:#2C9984;" width="27.3" height="52.1" />
+                            <path style="fill:#4CDBC4;" d="M287.9,180.2c-34.1-34.1-89.4-34.1-123.6,0s-34.1,89.4,0,123.6s89.4,34.1,123.6,0
+	C322,269.7,322,214.4,287.9,180.2z M273.4,289.3c-26.1,26.1-68.4,26.1-94.5,0s-26.1-68.4,0-94.5s68.4-26.1,94.5,0
+	S299.5,263.2,273.4,289.3z" />
+                            <path style="fill:#324A5E;" d="M321.7,305.1l-32.5,32.5c-0.9,0.9-0.9,2.3,0,3.1l78.3,78.3c0.9,0.9,2.3,0.9,3.1,0l32.5-32.5
+	c0.9-0.9,0.9-2.3,0-3.1l-78.3-78.3C323.9,304.2,322.5,304.2,321.7,305.1z" />
+                            <g>
+                                <path style="fill:#54C0EB;" d="M245.3,212c0,12.6-8.6,26.8-19.2,26.8c-10.6,0-19.2-14.2-19.2-26.8s8.6-18.8,19.2-18.8
+		S245.3,199.4,245.3,212z" />
+                                <path style="fill:#54C0EB;" d="M268.8,271.3c-12.1,5.1-26.8,8.4-42.7,8.4s-30.6-3.3-42.7-8.4c6.8-14,23.3-27.1,42.7-27.1
+		C245.5,244.2,262,257.4,268.8,271.3z" />
+                            </g>
+                        </svg>
+                        <div class="card__content">
+                            <p class="card__title">1º Diagnóstico
+                            </p>
+                            <p class="card__description">Evaluación inicial.
+                                Conocer contexto,
+                                organización y
+                                características del
+                                equipo.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 505 505" xml:space="preserve">
+                            <circle style="fill:#FDC2C8;" cx="252.5" cy="252.5" r="252.5" />
+                            <g>
+                                <rect x="235.8" y="99.1" style="fill:#FF7058;" width="33.3" height="35.2" />
+                                <polygon style="fill:#FF7058;"
+                                    points="204.9,432.7 244.7,347.8 208.5,347.8 168.8,432.7 	" />
+                                <polygon style="fill:#FF7058;"
+                                    points="336.2,432.7 296.5,347.8 260.3,347.8 300.1,432.7 	" />
+                            </g>
+                            <rect x="93.9" y="148.1" style="fill:#2B3B4E;" width="317.1" height="210.6" />
+                            <rect x="78" y="120.5" style="fill:#324A5E;" width="349.1" height="27.6" />
+                            <rect x="116.7" y="170.8" style="fill:#E6E9EE;" width="271.7" height="165.2" />
+                            <path style="fill:#54C0EB;" d="M361.6,219.2c-1.5-12.3-12.7-21.1-25.1-19.6c-12.3,1.5-21.1,12.7-19.6,25.1c0.5,4.1,2.1,7.8,4.4,10.8
+	l-28.2,36.9c-3.6-1.7-7.8-2.4-12.1-1.9c-2.5,0.3-4.8,1-7,2l-35.1-44.4c3.7-4.6,5.6-10.5,4.8-16.8c-1.5-12.3-12.7-21.1-25.1-19.6
+	c-12.3,1.5-21.1,12.7-19.6,25.1c0.5,4.4,2.4,8.4,5,11.6l-28.1,36.5c-3.8-2-8.3-2.8-12.9-2.3c-12.3,1.5-21.1,12.7-19.6,25.1
+	c1.5,12.3,12.7,21.1,25.1,19.6c12.3-1.5,21.1-12.7,19.6-25.1c-0.5-4.1-2.1-7.9-4.5-10.9l28.3-36.8c3.7,1.7,7.8,2.4,12.1,1.9
+	c2.5-0.3,4.8-1,7-2l35.1,44.4c-3.7,4.6-5.6,10.5-4.8,16.8c1.5,12.3,12.7,21.1,25.1,19.6c12.3-1.5,21.1-12.7,19.6-25.1
+	c-0.5-4.5-2.4-8.4-5-11.7l27.9-36.5c3.9,2,8.4,2.9,13,2.3C354.3,242.8,363.1,231.6,361.6,219.2z" />
+                        </svg>
+                        <div class="card__content">
+                            <p class="card__title">2º Plan del proceso
+                            </p>
+                            <p class="card__description">N° de sesiones
+                                Frecuencia
+                                Inversión
+                                Establecer objetivos.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 505 505" xml:space="preserve">
+                            <circle style="fill:#30C6DB;" cx="252.5" cy="252.5" r="252.5" />
+                            <path style="fill:#2B3B4E;" d="M210.7,340.2c1.5-6.6,2-13.1,1.7-19.4c-0.9-14.1,4.2-27.9,14.2-37.9l56.4-56.4
+        c10.1-10.1,24.1-14.9,38.4-14.1c1.2,0.1,2.4,0.1,3.5,0.1c25.1,0,46.9-13.6,58.6-33.8H329l-14.8-33.9l14.8-33.9h54.5
+        c-12.3-21.2-35.7-35.1-62.3-33.7c-31.1,1.6-57.4,25-63,55.6c-1,5.5-1.3,10.9-1,16.1c0.9,14.1-4.2,27.9-14.1,37.9l-56.4,56.4
+        c-10.1,10.1-24.1,14.9-38.4,14.1c-1.2-0.1-2.4-0.1-3.5-0.1c-25.1,0-46.9,13.6-58.6,33.8h54.5l14.8,33.9l-14.8,33.9H86.2
+        c12.9,22.2,38,36.5,66.1,33.4C180.6,389.1,204.2,367.9,210.7,340.2z" />
+                            <polygon style="fill:#FFFFFF;" points="155.1,113.1 110.7,94.7 94.7,110.7 113.1,155.1 151.9,166.5 279.4,294 294,279.4 
+        166.5,151.9 " />
+                            <path style="fill:#F1543F;" d="M395.9,395.9L395.9,395.9c-20.3,20.3-53.7,19-72.3-3l-57.7-68l59-59l68,57.7
+        C414.9,342.2,416.2,375.6,395.9,395.9z" />
+                            <g>
+                                <path style="fill:#FF7058;" d="M330.1,260.6l-69.5,69.5c-1.1,1.1-2.8,1.1-3.9,0l-13.5-13.5c-1.1-1.1-1.1-2.8,0-3.9l69.5-69.5
+            c1.1-1.1,2.8-1.1,3.9,0l13.5,13.5C331.2,257.8,331.2,259.6,330.1,260.6z" />
+                                <path style="fill:#FF7058;" d="M382.1,348.4L382.1,348.4c-2.8,2.8-7.4,2.8-10.2,0l-42.3-42.3c-2.8-2.8-2.8-7.4,0-10.2l0,0
+            c2.8-2.8,7.4-2.8,10.2,0l42.3,42.3C384.9,341,384.9,345.6,382.1,348.4z" />
+                                <path style="fill:#FF7058;" d="M348.4,382.1L348.4,382.1c-2.8,2.8-7.4,2.8-10.2,0l-42.3-42.3c-2.8-2.8-2.8-7.4,0-10.2l0,0
+            c2.8-2.8,7.4-2.8,10.2,0l42.3,42.3C351.2,374.7,351.2,379.3,348.4,382.1z" />
+                                <path style="fill:#FF7058;" d="M365.3,365.3L365.3,365.3c-2.8,2.8-7.4,2.8-10.2,0L312.8,323c-2.8-2.8-2.8-7.4,0-10.2l0,0
+            c2.8-2.8,7.4-2.8,10.2,0l42.3,42.3C368.1,357.9,368.1,362.4,365.3,365.3z" />
+                            </g>
+                        </svg>
+                        <div class="card__content">
+                            <p class="card__title">3º Co-creación
+                            </p>
+                            <p class="card__description">Propuesta aceptada a refinar en conjunto.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 505 505" xml:space="preserve">
+                            <path style="fill:#FDC2C8;" d="M505,252.5c0,70.2-28.6,133.7-74.9,179.4C384.5,477.1,321.7,505,252.5,505s-132-27.9-177.6-73
+	C28.6,386.2,0,322.7,0,252.5C0,113.1,113,0,252.5,0C391.9,0,505,113.1,505,252.5z" />
+                            <path style="fill:#324A5E;"
+                                d="M426.7,171v-25.6c0-12.5-10.1-22.5-22.5-22.5H100.9c-12.5,0-22.5,10.1-22.5,22.5V171H426.7z" />
+                            <path style="fill:#FFFFFF;" d="M426.7,169.8v189.8c0,12.5-10.1,22.6-22.6,22.6H100.9c-12.5,0-22.6-10.1-22.6-22.6V169.8h117.8
+	l11.4-17h62.9l11.3,17H426.7z" />
+                            <polygon style="fill:#84DBFF;" points="110.6,169.8 196.1,169.8 184.8,152.8 121.9,152.8 " />
+                            <circle style="fill:#FF7058;" cx="394.4" cy="147.7" r="10.1" />
+                            <circle style="fill:#84DBFF;" cx="355.6" cy="147.7" r="10.1" />
+                            <path style="fill:#FF7058;" d="M256.7,279.9h-20v65.3c0,1.7-1.3,3-3,3h-27.9v-46h-37.5v46h-27.9c-1.7,0-3-1.3-3-3v-65.3h-20
+	c-2.7,0-4.1-3.2-2.2-5.2l69.7-69.6c1.2-1.2,3.1-1.2,4.3,0l69.7,69.6C260.7,276.6,259.4,279.9,256.7,279.9z" />
+                            <path style="fill:#84DBFF;" d="M345.3,249.5l-11.5,4.2l2.3,10.9c-3.1,2-5.9,4.5-8.2,7.5l-10.7-3.3l-5.2,11.1l9.4,6.1
+	c-0.8,3.7-0.9,7.4-0.5,11.1l-9.9,5.2l4.2,11.5l10.9-2.3c2,3.1,4.5,5.9,7.5,8.2l-3.3,10.7l11.1,5.2l6.1-9.4c3.7,0.8,7.4,0.9,11.1,0.5
+	l5.2,9.9l11.5-4.2l-2.3-10.9c3.1-2,5.9-4.5,8.2-7.5l10.7,3.3l5.2-11.1l-9.4-6.1c0.8-3.7,0.9-7.4,0.5-11.1l9.9-5.2l-4.2-11.5
+	l-10.9,2.3c-2-3.1-4.5-5.9-7.5-8.2l3.3-10.7l-11.1-5.2l-6.1,9.4c-3.7-0.8-7.4-0.9-11.1-0.5L345.3,249.5z M363.3,274.4
+	c10.3,4.8,14.7,17,9.9,27.3c-4.8,10.3-17,14.7-27.3,9.9c-10.3-4.8-14.7-17-9.9-27.3C340.8,274,353,269.6,363.3,274.4z" />
+                            <path style="fill:#4CDBC4;" d="M291.5,212.7c-2.5,0.6-4.9,1.7-7.1,3.1l-6.3-4.5l-5.9,6.2l4.8,6.1c-1.3,2.3-2.3,4.7-2.8,7.2l-7.7,1.3
+	l0.2,8.5l7.7,0.9c0.6,2.5,1.7,4.8,3.1,7l-4.5,6.3l6.2,5.8l6.1-4.8c2.3,1.3,4.7,2.2,7.2,2.7l1.3,7.7l8.5-0.2l0.9-7.7
+	c2.5-0.6,4.9-1.7,7.1-3.1l6.3,4.5l5.9-6.2l-4.8-6.1c1.3-2.3,2.3-4.7,2.8-7.2l7.7-1.3l-0.2-8.5l-7.7-0.9c-0.6-2.5-1.7-4.8-3.1-7
+	l4.5-6.3l-6.2-5.8l-6.1,4.8c-2.3-1.3-4.7-2.2-7.2-2.7l-1.3-7.7l-8.5,0.2L291.5,212.7z M307.3,225.1c5.7,5.4,5.9,14.4,0.5,20.2
+	c-5.4,5.7-14.5,6-20.2,0.6s-5.9-14.4-0.5-20.2C292.5,220,301.5,219.7,307.3,225.1z" />
+                        </svg>
+                        <div class="card__content">
+                            <p class="card__title" style="word-break: break-all;">4º Implementación
+                            </p>
+                            <p class="card__description">Puesta en marcha
+                                del proceso de
+                                coaching.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 505 505" xml:space="preserve">
+                            <circle style="fill:#30C6DB;" cx="252.5" cy="252.5" r="252.5" />
+                            <path style="fill:#324A5E;" d="M404.1,122.9H100.9c-12.5,0-22.6,10.1-22.6,22.6v48.2h348.3v-48.2C426.7,133,416.6,122.9,404.1,122.9
+	z" />
+                            <path style="fill:#FFFFFF;" d="M426.7,169.8v189.8c0,12.5-10.1,22.6-22.6,22.6H100.9c-12.5,0-22.6-10.1-22.6-22.6V169.8h117.8
+	l11.4-17h62.9l11.3,17H426.7z" />
+                            <polygon style="fill:#84DBFF;" points="110.6,169.8 196.1,169.8 184.8,152.8 121.9,152.8 " />
+                            <circle style="fill:#54C0EB;" cx="394.4" cy="147.7" r="10.1" />
+                            <circle style="fill:#E6E9EE;" cx="355.6" cy="147.7" r="10.1" />
+                            <path style="fill:#FFD05B;" d="M272.2,348.8c-6.7,11-21,14.4-32,7.8c-11-6.7-14.4-21-7.8-32c6.7-11,57.6-49.9,57.6-49.9
+	S278.9,337.8,272.2,348.8z" />
+                            <g>
+                                <path style="fill:#E6E9EE;" d="M188.2,265.8c-14.4,15.6-23.2,36.5-23.2,59.4c0,21.7,8,41.6,21.1,56.9h-32.2
+		c-9.7-16.7-15.3-36.2-15.3-56.9c0-30.2,11.8-57.6,30.9-78L188.2,265.8z" />
+                                <path style="fill:#E6E9EE;" d="M252.5,211.4v26.3l0,0c-12.5,0-24.4,2.6-35.2,7.4l-10.1-24.3C221.1,214.7,236.4,211.4,252.5,211.4
+		L252.5,211.4z" />
+                                <path style="fill:#E6E9EE;"
+                                    d="M335.4,247.3l-18.6,18.6c-8.1-8.8-18-15.9-29-20.8l10.1-24.3C312.1,227,324.9,236.1,335.4,247.3z" />
+                                <path style="fill:#E6E9EE;" d="M366.3,325.2c0,20.8-5.6,40.2-15.3,56.9h-32.1c13.1-15.3,21.1-35.2,21.1-56.9
+		c0-10.3-1.8-20.1-5-29.2l24.4-10.1C363.9,298.2,366.3,311.4,366.3,325.2z" />
+                            </g>
+                        </svg>
+                        <div class="card__content">
+                            <p class="card__title">5º Medición y seguimiento
+                            </p>
+                            <p class="card__description">Medir indicadores de
+                                resultados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warning"><svg width="800px" height="800px" viewBox="0 0 64 64"
+                        xmlns="http://www.w3.org/2000/svg">
+
+                        <g data-name="09_Idea" id="_09_Idea">
+
+                            <path d="M59,62H5a1,1,0,0,1-1-1V28a1,1,0,0,1,1-1H59a1,1,0,0,1,1,1V61A1,1,0,0,1,59,62Z"
+                                style="fill:#03a65a" />
+
+                            <path
+                                d="M55,22H9a1,1,0,0,0-1,1V57a1,1,0,0,0,1,1H23.69A16.949,16.949,0,0,1,31,59.65q.255.1.51.24a1.03,1.03,0,0,0,.45.11.988.988,0,0,0,.45-.1l.21-.11c.12-.06.25-.12.38-.17A17.119,17.119,0,0,1,40.24,58H55a1,1,0,0,0,1-1V23A1,1,0,0,0,55,22Z"
+                                style="fill:#fdfeff" />
+
+                            <path
+                                d="M33,39V59.62c-.13.05-.26.11-.38.17l-.21.11a.988.988,0,0,1-.45.1,1.03,1.03,0,0,1-.45-.11q-.255-.135-.51-.24V39Z"
+                                style="fill:#dfeaef" />
+
+                            <path
+                                d="M33.515,61.579A15.179,15.179,0,0,1,40.237,60H55a3,3,0,0,0,3-3V27H57V57a2,2,0,0,1-2,2H40.237a16.183,16.183,0,0,0-7.168,1.684l-.216.107a2,2,0,0,1-1.8-.012A16.173,16.173,0,0,0,23.692,59H9a2,2,0,0,1-2-2V27H6V57a3,3,0,0,0,3,3H23.692a15.163,15.163,0,0,1,6.9,1.669A3.02,3.02,0,0,0,31.963,62a2.984,2.984,0,0,0,1.334-.313Z"
+                                style="fill:#c3d6dd" />
+
+                            <path
+                                d="M56,57a1,1,0,0,1-1,1H40.237a17.189,17.189,0,0,0-7.613,1.788l-.216.107a.993.993,0,0,1-.445.1,1.006,1.006,0,0,1-.457-.11A17.164,17.164,0,0,0,23.692,58H9a1,1,0,0,1-1-1V26H7V57a2,2,0,0,0,2,2H23.692a16.173,16.173,0,0,1,7.357,1.779,2,2,0,0,0,1.8.012l.216-.107A16.183,16.183,0,0,1,40.237,59H55a2,2,0,0,0,2-2V26H56Z"
+                                style="fill:#dfeaef" />
+
+                            <path
+                                d="M18,34a1,1,0,0,1-.555-.168L15,32.2l-2.445,1.63A1,1,0,0,1,11,33V22h8V33a1,1,0,0,1-1,1Z"
+                                style="fill:#d6e8f2" />
+
+                            <path
+                                d="M19,33a1,1,0,0,1-.555-.168L16,31.2l-2.445,1.63A1,1,0,0,1,12,32V22h8V32a1,1,0,0,1-1,1Z"
+                                style="fill:#f74e0c" />
+
+                            <path d="M14,32V22H12V32a1,1,0,0,0,1.555.832l.563-.375A.986.986,0,0,1,14,32Z"
+                                style="fill:#e03a07" />
+
+                            <rect height="2" style="fill:#d6e8f2" width="15" x="13" y="38" />
+
+                            <rect height="2" style="fill:#d6e8f2" width="15" x="13" y="42" />
+
+                            <rect height="2" style="fill:#d6e8f2" width="15" x="13" y="46" />
+
+                            <rect height="2" style="fill:#d6e8f2" width="7" x="13" y="50" />
+
+                            <rect height="2" style="fill:#d6e8f2" width="15" x="36" y="38" />
+
+                            <rect height="2" style="fill:#d6e8f2" width="15" x="36" y="42" />
+
+                            <rect height="2" style="fill:#d6e8f2" width="15" x="36" y="46" />
+
+                            <rect height="2" style="fill:#d6e8f2" width="15" x="36" y="50" />
+
+                            <rect height="2" style="fill:#d6e8f2" width="2" x="22" y="50" />
+
+                            <rect height="2" style="fill:#d6e8f2" width="2" x="26" y="50" />
+
+                            <rect height="4" style="fill:#febc00" width="2" x="31" y="2" />
+
+                            <rect height="4" style="fill:#febc00" transform="translate(0.277 13.054) rotate(-29.998)"
+                                width="2" x="23.5" y="4.009" />
+
+                            <rect height="4" style="fill:#febc00" transform="translate(-0.455 22.212) rotate(-59.998)"
+                                width="2" x="18.009" y="9.5" />
+
+                            <rect height="2" style="fill:#febc00" width="4" x="15" y="18" />
+
+                            <rect height="2" style="fill:#febc00" width="4" x="45" y="18" />
+
+                            <rect height="2" style="fill:#febc00" transform="translate(0.276 24.032) rotate(-29.995)"
+                                width="4" x="42.991" y="10.5" />
+
+                            <rect height="2" style="fill:#febc00" transform="translate(14.548 37.215) rotate(-60.005)"
+                                width="4" x="37.5" y="5.009" />
+
+                            <path
+                                d="M27,31v3.512a3.122,3.122,0,0,0,1.274,2.56,5.645,5.645,0,0,0,.552.341c.062.034.125.063.188.094.121.06.241.115.362.163.076.03.151.059.227.085.1.035.208.065.312.092.084.022.168.047.251.064s.149.022.223.033a4.168,4.168,0,0,0,.645.046c.031,0,.063,0,.094,0a3.746,3.746,0,0,0,.385-.033c.027,0,.053-.006.08-.011A4,4,0,0,0,35,34V30.576a9.834,9.834,0,0,1,2.7-6.571,8.917,8.917,0,0,0,1.344-2H22.937a9.049,9.049,0,0,0,1.437,2.091A10.148,10.148,0,0,1,27,31Z"
+                                style="fill:#d6e8f2" />
+
+                            <path
+                                d="M35,31H29a1,1,0,0,1-1-1,10.148,10.148,0,0,0-2.626-6.909,9,9,0,1,1,15.552-7.263h0A9.036,9.036,0,0,1,38.7,23.005,9.834,9.834,0,0,0,36,29.576V30A1,1,0,0,1,35,31Z"
+                                style="fill:#febc00" />
+
+                            <path
+                                d="M30,30a10.148,10.148,0,0,0-2.626-6.909A8.989,8.989,0,0,1,33.04,8.059a9,9,0,0,0-7.666,15.032A10.148,10.148,0,0,1,28,30a1,1,0,0,0,1,1h2A1,1,0,0,1,30,30Z"
+                                style="fill:#edaa03" />
+
+                            <path d="M33,30H31V20a1,1,0,0,1,.293-.707l3-3,1.414,1.414L33,20.414Z"
+                                style="fill:#fdfeff" />
+
+                            <rect height="4.389" style="fill:#fdfeff" transform="translate(-4.127 26.934) rotate(-45)"
+                                width="2" x="29.448" y="16.254" />
+
+                            <path
+                                d="M29.274,36.072A3.122,3.122,0,0,1,28,33.512V29h8v4C36,36.078,32.506,38.356,29.274,36.072Z"
+                                style="fill:#f74e0c" />
+
+                            <path
+                                d="M31.274,36.072A3.122,3.122,0,0,1,30,33.512V29H28v4.512a3.122,3.122,0,0,0,1.274,2.56,4.437,4.437,0,0,0,3.713.8A5.056,5.056,0,0,1,31.274,36.072Z"
+                                style="fill:#e03a07" />
+
+                            <circle cx="18" cy="25" r="1" style="fill:#f74e0c" />
+
+                        </g>
+
+                    </svg>
+                    <p>UN COACH ACOMPAÑA EN EL PROCESO DE CAMBIO A TRAVÉS DE
+                        PREGUNTAS PODEROSAS DESAFIANDO LA ZONA DE CONFORT COMO
+                        PUENTE HACIA LA TRANSFORMACIÓN.
+                        <br>QUE DESEAS ALCANZAR.
+                    </p>
+                </div>
+
+            </section>
+        </div>
+
+        <div id="page2" class="page" style="display: none;">
+            <h2>Coaching Organizacional</h2>
+            <h3>Desarrollar habilidades del colaborador para alcanzar los resultados esperados. Se enfoca en
+                identificar
+                y
+                superar obstáculos, promover el
+                aprendizaje continuo y facilitar la consecución de objetivos personales y para el equipo que
+                impactan en
+                el
+                rendimiento de la organización.</h3>
+
+            <section>
+                <h3> ➤ Facilitación de conversaciones</h3>
+                <ul>
+                    <li>Espacio dedicado para abordar y resolver conflictos o desafíos entre miembros de la
+                        organización.
+                        Durante una sesión de una hora, el facilitador
+                        guía a las partes involucradas hacia acuerdos constructivos y soluciones prácticas para
+                        afrontar
+                        situaciones en el futuro.
+                    </li>
+                </ul>
+
+                <h3> ➤ Coaching de equipos</h3>
+                <ul>
+                    <li>Sesiones grupales dirigidas a los integrantes de un equipo de trabajo, con el objetivo de
+                        abordar
+                        diversos aspectos como la resolución de
+                        conflictos, la ampliación del potencial del equipo y el desarrollo de competencias
+                        colaborativas,
+                        utilizando distinciones de coaching para
+                        incorporar conversaciones potenciadoras y atravesar los desafíos del equipo de manera
+                        efectiva.
+                    </li>
+                </ul>
+
+                <div class="warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-alert-circle">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <p>UN COACH CREA ESPACIO DE CONFIANZA Y SEGURIDAD DENTRO DEL EQUIPO PARA
+                        GENERAR NUEVAS POSIBILIDADES.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="left">
+            <div class="logo">
+                <img src="../Imagenes/Logo Mediano.png" alt="Logo de la empresa">
+            </div>
+            <div class="derechos">Derechos reservados © 2023 Consultora Milagros Orbelli</div>
+        </div>
+        <div class="right">
+            <div class="siguenos">
+                <h3>Siguenos</h3>
+                <a href="https://www.instagram.com/milagrosorbelli/"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg> Instagram</a>
+                <a href="https://www.facebook.com/milagrosorbellith "><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>Facebook</a>
+                <a href="https://www.linkedin.com/in/milagrosorbelli"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>&nbsp;LinkedIn</a>
+            </div>
+            <div class="info-contacto">
+                <h3>Informacion de Contacto</h3>
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-map-pin">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>Sunchales, Sta. Fe</li>
+                    <li><a href="tel:+5493483485904 "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>+54 9 3483 485904</a></li>
+                    <li><a href="mailto:milagros.orbelli@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>&nbsp;milagros.orbelli@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../Script/header.js"></script>
+    <script src="../Script/pageChange.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,488 @@
+.slider img {
+    padding-top: 20px;
+    max-width: 100%;
+    /* Establece un ancho máximo del 100% del contenedor */
+    max-height: 500px;
+    /* Establece un alto máximo, ajusta según tus necesidades */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+}
+
+.welcome {
+    margin-top: 5px;
+}
+
+h1 {
+    display: flex;
+    font-size: 2rem;
+    width: 40%;
+    height: 4rem;
+    text-decoration: underline;
+    color: #fff;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 69px;
+    background: linear-gradient(145deg, #59bfcc, #6ae3f3);
+    box-shadow: 8px 8px 8px #28555b;
+    transition: transform 0.7s ease-in-out
+}
+
+h1:hover {
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: scale(1.2);
+    background: linear-gradient(145deg, #44bfcf, #2ce6ff);
+    box-shadow: 8px 8px 8px #28555b
+}
+
+.welcome p {
+    max-height: 100%;
+    text-align: justify;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #626262;
+    opacity: .7;
+    font-weight: 500;
+    margin-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+
+}
+
+.welcome h2 {
+    display: flex;
+    font-size: 1.5rem;
+    width: 20%;
+    height: 4rem;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 69px;
+    background: linear-gradient(145deg, #59bfcc, #6ae3f3);
+    box-shadow: 8px 8px 8px #28555b;
+    transition: transform 0.7s ease-in-out
+}
+
+.welcome h2:hover {
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: scale(1.2);
+    background: linear-gradient(145deg, #44bfcf, #2ce6ff);
+    box-shadow: 8px 8px 8px #28555b
+}
+
+.valores {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 12.5em;
+    margin: auto;
+    border-radius: 50px;
+    background: linear-gradient(225deg, #d8d8d8, #ffffff);
+    box-shadow: -5px 5px 10px #aaaaaa,
+        5px -5px 10px #ffffff;
+
+}
+
+.valores .svg {
+    color: black;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.1em;
+    text-decoration: double;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    height: 12rem;
+    flex-wrap: wrap;
+    transition: transform 0.7s ease-in-out
+}
+
+.valores .svg svg {
+    width: 100%;
+    height: 50%;
+
+}
+
+.valores .svg:hover {
+    transform: scale(1.3);
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.tarjetas {
+    display: flex;
+    width: 100%;
+    height: 12em;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    justify-content: space-evenly;
+
+}
+
+.tarjetas .card {
+    --bg: #f7f7f8;
+    --hover-bg: #FFE5F4;
+    --hover-text: #E50087;
+    width: 30%;
+    text-align: center;
+    background: var(--bg);
+    padding: 1.5em;
+    padding-block: 1.8em;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: .9s cubic-bezier(.6, .4, 0, 1), transform .15s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 50px;
+    background: linear-gradient(225deg, #c8c8c8, #eeeeee);
+    box-shadow: -5px 5px 10px #9e9e9e,
+        5px -5px 10px #ffffff;
+}
+
+.tarjetas .card__body {
+    color: #464853;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+.tarjetas .card__body svg {
+    width: 20%;
+    height: auto;
+}
+
+.tarjetas .card> :not(span) {
+    transition: .3s cubic-bezier(.6, .4, 0, 1);
+}
+
+.tarjetas .card>strong {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: -.035em;
+}
+
+.tarjetas .card span {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hover-text);
+    border-radius: 5px;
+    font-weight: bold;
+    top: 100%;
+    transition: all .3s cubic-bezier(.6, .4, 0, 1);
+}
+
+.tarjetas .card:hover span {
+    top: 0;
+    font-size: 1.2em;
+}
+
+.tarjetas .card:hover {
+    background: var(--hover-bg);
+}
+
+.tarjetas .card:hover>div,
+.tarjetas .card:hover>strong {
+    opacity: 0;
+}
+
+.css-button-sliding-to-bottom--rose {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    margin: auto;
+    width: 20%;
+    margin-top: 3.5%;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #ff0a78;
+    color: #ff0a78;
+}
+
+.css-button-sliding-to-bottom--rose:hover {
+    color: #fff;
+}
+
+.css-button-sliding-to-bottom--rose:hover:after {
+    height: 100%;
+}
+
+.css-button-sliding-to-bottom--rose:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: #ff0a78;
+}
+
+.proposito {
+    display: block;
+    padding-top: 25px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+    height: 25rem;
+    border-radius: 8px;
+    background: linear-gradient(225deg, #a2f3fe, #88ccd5);
+    box-shadow: -5px 5px 10px #8bd1da,
+        5px -5px 10px #a3f5ff;
+}
+
+.proposito h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 36%;
+    height: 4rem;
+    margin: auto;
+    font-size: 2em;
+    background-color: #30C6DB;
+    border-radius: 10px 100px / 120px;
+    background: #30C6DB;
+    box-shadow: -5px 5px 10px #1d7986,
+        5px -5px 10px #43ffff;
+}
+
+.proposito .flex-box {
+    display: flex;
+    width: 80%;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.proposito .flex-box .logo {
+    max-width: 100%;
+    /* Asegura que el logo no supere el ancho del contenedor */
+    max-height: 100%;
+    /* Evita el espacio adicional debajo del logo */
+    margin: 0 auto;
+}
+
+.proposito .svg {
+    transition: transform 0.7s ease-in-out
+}
+
+.proposito:hover .svg {
+    transform: translateX(-30%) scale(1.5);
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.proposito .flex-box .txt {
+    font-size: 1.4rem;
+}
+
+.servicios {
+    display: flex;
+    height: 30.5em;
+    width: 100%;
+    margin-top: 2em;
+    justify-content: space-around;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    background: #FDC2C8;
+    box-shadow: -7px 7px 8px #fdc1c7,
+        7px -7px 8px #FDC2C8;
+}
+
+.servicios h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    height: 4rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 2em;
+    border-radius: 10px 100px / 120px;
+    background: #FDC2C8;
+    box-shadow: -5px 5px 10px #fc8692,
+        5px -5px 10px #ffc0c6;
+}
+
+
+.servicios .flip-card {
+    background-color: transparent;
+    width: 40%;
+    height: 30%;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.servicios .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.servicios .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.servicios .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.servicios .flip-card-front,
+.servicios .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(206, 137, 160);
+    border-radius: 1rem;
+}
+
+.servicios .flip-card-front {
+    background: linear-gradient(120deg, rgb(255, 160, 170) 60%, rgb(255, 202, 182) 88%, rgba(90, 30, 120, 0.6) 40%, rgba(255, 143, 178, 0.4) 48%);
+    color: rgb(0, 0, 0);
+}
+
+.servicios .flip-card-back {
+    background: linear-gradient(120deg, rgba(255, 143, 178, 0.4) 30%, rgb(255, 202, 182) 88%,
+            rgba(90, 30, 120, 0.6) 40%, rgb(255, 160, 170) 78%);
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        width: 80%;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .welcome h2 {
+        width: 80%;
+        font-size: 1.5rem;
+        margin-bottom: 2vh;
+    }
+
+    .valores {
+        width: 90%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .valores .svg {
+        width: 50%;
+        text-align: center;
+    }
+
+    .tarjetas{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .tarjetas .card{
+        width: 80%;
+        margin-bottom: 2vh;
+    }
+
+    .css-button-sliding-to-bottom--rose{
+        width: 50%;
+    }
+
+    .proposito {
+        height: auto;
+    }
+
+    .proposito h2{
+        width: 60%;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 2.5vh;
+    }
+
+    .proposito .flex-box{
+        width: 90%;
+        height: auto;
+        flex-wrap: wrap-reverse;
+    }
+
+    .proposito .flex-box .txt{
+        text-align: justify;
+    }
+
+    .proposito:hover .svg {
+        transform: scale(1.5);
+    }
+
+    .servicios{
+        height: auto;
+    }
+
+    .servicios h2{
+        width: 60%;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1.5vh;
+    }
+    .servicios .flip-card{
+        width: 90%;
+        height: 15vh;
+        margin-bottom: 1.5vh;
+    }
+    .servicios p{
+        font-size: .9rem;
+    }
+}
+@media (max-width:480px) {
+
+    .tarjetas .card:hover span{
+        font-size: 1rem;
+    }
+
+    .servicios .flip-card{
+        width: 90%;
+        height: 20vh;
+        margin-bottom: 1.5vh;
+    }
+    .servicios p{
+        font-size: .9rem;
+    }
+}

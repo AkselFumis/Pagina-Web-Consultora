@@ -190,6 +190,48 @@ section ul li::marker {
     width: 80%;
 }
 
+@media (max-width:1200px){
+    h2 {
+        font-size: 1.4rem;
+    }
+    .pasos{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .pasos .card{
+        width: 27%;
+        margin: 3%;
+    }
+    .pasos .card__title{
+        font-size: 1rem;
+    }
+    .pasos .card__description{
+        font-size: .8rem;
+    }
+    .pasos .card__description.small{
+        font-size: .75rem;
+    }
+}
+
+@media (max-width:1024px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .pasos .card{
+        width: 40%;
+        margin: 5%;
+    }
+    .pasos .card__title{
+        font-size: 1.1rem;
+    }
+    .pasos .card__description{
+        font-size: .9rem;
+    }
+    .pasos .card__description.small{
+        font-size: .85rem;
+    }
+}
+
 @media (max-width:768px) {
     h2{
         width: 90%;
@@ -230,10 +272,6 @@ section ul li::marker {
         transform: scale(1.15);
     }
 
-    .pasos{
-        flex-wrap: wrap;
-        height: auto;
-    }
     .pasos .card{
         width: 100%;
         margin: 10%;

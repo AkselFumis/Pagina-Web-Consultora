@@ -27,6 +27,7 @@
     margin: 0px;
     position: relative;
     width: 100%;
+    z-index: 0;
 }
 
 .btn-color-mode-switch>label.btn-color-mode-switch-inner {
@@ -107,7 +108,7 @@
 
 .page h2{
     display: flex;
-    font-size: 2rem;
+    font-size: 1.85rem;
     width: 40%;
     height: 4rem;
     text-decoration: underline;
@@ -318,6 +319,52 @@
     transform: rotate(-45deg);
 }
 
+@media (max-width:1200px){
+    .page h2 {
+        font-size: 1.4rem;
+    }
+    .page .pasos{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .page .pasos .card{
+        width: 27%;
+        margin: 3%;
+    }
+    .page .pasos .card__title{
+        font-size: 1rem;
+    }
+    .page .pasos .card__description{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .page h2 {
+        font-size: 1.5rem;
+    }
+    .page .pasos .card{
+        width: 40%;
+        margin: 5%;
+    }
+    .page .pasos .card__title{
+        font-size: 1.1rem;
+    }
+    .page .pasos .card__description{
+        font-size: .9rem;
+    }
+    .btn-color-mode-switch>label.btn-color-mode-switch-inner:before{
+        font-size: 1rem;
+    }
+    .btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner:after {
+        font-size: 1rem;
+    }
+    
+    .btn-color-mode-switch>label.btn-color-mode-switch-inner:after {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width:768px) {
     .page h2{
         width: 90%;
@@ -343,10 +390,6 @@
     }
     .warning p {
         font-size: 1.1rem;
-    }
-    .page .pasos{
-        flex-wrap: wrap;
-        height: auto;
     }
     .page .pasos .card{
         width: 100%;

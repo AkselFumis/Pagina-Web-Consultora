@@ -99,6 +99,7 @@ h1:hover {
     display: flex;
     justify-content: center;
     align-content: center;
+    text-align: center;
     width: 20%;
     height: 12rem;
     flex-wrap: wrap;
@@ -387,6 +388,25 @@ h1:hover {
             rgba(90, 30, 120, 0.6) 40%, rgb(255, 160, 170) 78%);
     color: rgb(0, 0, 0);
     transform: rotateY(180deg);
+}
+
+@media (max-width:1024px) {
+    h1{
+        font-size: 1.4rem;
+    }
+    .welcome h2 {
+        font-size: 1.4rem;
+    }
+    .valores .svg {
+        font-size: 1em;
+    }
+    
+    .valores .svg:hover {
+        transform: scale(1.1);
+    }
+    .proposito h2{
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 768px) {

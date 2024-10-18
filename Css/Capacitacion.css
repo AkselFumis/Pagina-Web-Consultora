@@ -156,6 +156,36 @@ section ul li::marker {
     transform: rotate(-45deg);
 }
 
+@media (max-width:1200px){
+    .pasos{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .pasos .card{
+        width: 27%;
+        margin: 3%;
+    }
+    .pasos .card__title{
+        font-size: 1rem;
+    }
+    .pasos .card__description{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .pasos .card{
+        width: 40%;
+        margin: 5%;
+    }
+    .pasos .card__title{
+        font-size: 1.1rem;
+    }
+    .pasos .card__description{
+        font-size: .9rem;
+    }
+}
+
 @media (max-width:768px) {
     h2{
         width: 90%;
@@ -174,10 +204,6 @@ section ul li::marker {
 
     section h3{
         font-size: 1.6rem;
-    }
-    .pasos{
-        flex-wrap: wrap;
-        height: auto;
     }
     .pasos .card{
         width: 100%;
